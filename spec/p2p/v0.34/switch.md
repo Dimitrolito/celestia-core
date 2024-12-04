@@ -90,7 +90,7 @@ returned by the dialing method, as it indicates that peer is already connected
 or that another routine is attempting to (re)connect to it.
 
 A first set of connection attempts is done at (about) regular intervals.
-More precisely, between two attempts, the switch waits for a interval of
+More precisely, between two attempts, the switch waits for an interval of
 `reconnectInterval`, hard-coded to 5 seconds, plus a random jitter up to
 `dialRandomizerIntervalMilliseconds`, hard-coded to 3 seconds.
 At most `reconnectAttempts`, hard-coded to 20, are made using this
